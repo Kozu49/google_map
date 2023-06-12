@@ -1,0 +1,10 @@
+version: '3'
+services:
+  php-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    volumes:
+      - /home/manoj/Desktop/google_map/google_map:/var/www/html:rw
