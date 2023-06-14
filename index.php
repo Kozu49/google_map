@@ -35,10 +35,12 @@
        .embname-text{
   font-size:22px;
   font-weight:bold;
+  text-align:center;
 }
 
 .logo-title{
   font-size: 22px;
+  color:0000FB;
 }
 
          #emb-name {
@@ -80,13 +82,12 @@
 
 <div id="header-left">
         <div id="emb-name">
-            <span>
-                <strong class="embname-main logo-title" style="color:#000066; text-bold">Embassy of Japan in Nepal</strong> <br>
-                <span class="embname-sub">
-                    <span class="embname-logo"><img src="https://www.np.emb-japan.go.jp/files/100002131.png" alt="Japan national flag"></span>
-                    <span class="embname-text" lang="ne" style="color:#000066;">जापानी राजदुतावास</span>
-                </span>
-        </span>
+              
+            <span style="text-align:center">
+                <p style="color:red; margin:0;" >Government of Nepal</p>
+                <strong class="embname-main logo-title" style="color:#000066; text-bold">Embassy of Nepal</strong> <br>
+                <span class="embname-text" lang="ne" style="color:#000066;">Tokyo, Japan</span>
+             </span>
         </div>
     </div>
     <p class="title">Nepalese Population in Japan (Prefecture wise).</p>
