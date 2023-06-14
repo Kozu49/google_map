@@ -10,12 +10,12 @@ COPY composer.json composer.lock ./
 # Install PHP extensions and Composer
 RUN apt-get update \
     && apt-get install -y zip unzip libpq-dev \
-    && docker-php-ext-install pdo pdo_pgsql \
+    && apt-get install -y default-mysql-client \
+    && docker-php-ext-install pdo pdo_pgsql mysqli \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install application dependencies
 # RUN composer install --no-scripts --no-autoloader
-
 
 # Rename index.php to google_map.php
 # RUN mv index.php google_map.php

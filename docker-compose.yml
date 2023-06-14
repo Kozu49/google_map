@@ -8,3 +8,12 @@ services:
       - 8080:80
     volumes:
       - /home/manoj/Desktop/google_map/google_map:/var/www/html:rw
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
