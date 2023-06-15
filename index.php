@@ -45,9 +45,7 @@
 
          #emb-name {
             width:100%;
-            height:100%;
-            
-            background-image: url('https://www.np.emb-japan.go.jp/files/000061767.png');
+            height:100%;            
             background-repeat: no-repeat;
             background-size: contain;
             background-position:center;
